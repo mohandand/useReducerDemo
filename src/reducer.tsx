@@ -1,12 +1,10 @@
-const reducer = (state, action) => {
+export default function reducer(state, action) {
   switch (action.type) {
-    case 'Increment':
+    case 'Inc':
       return { count: state.count + 1 };
-    case 'Decrement':
+    case 'Dec':
       return { count: state.count - 1 };
     default:
       return state;
   }
-};
-
-export default reducer;
+}
